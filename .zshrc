@@ -7,6 +7,7 @@ alias jl="jupyter lab"
 alias l="ls"
 alias la="ls -a"
 alias c="clear"
+alias o="open"
 
 # Tree
 alias t="tree"
@@ -21,6 +22,8 @@ alias kd="ksdiff"
 # Git
 alias gs="git status"
 alias ga="git add"
+alias gcm="git commit -m"
+alias gl="git log"
 alias gb="git branch"
 alias gba="git branch -a"
 alias gc="git checkout"
@@ -62,3 +65,10 @@ setopt PROMPT_SUBST
 # Minimal prompt: (venv) foldername branch %
 PROMPT='%F{red}%(1v.%1v .)%F{white}%c%f${$(parse_git_branch):+" | %F{green}$(parse_git_branch)%f"} : '
 #---------------------PROMT------------------------
+
+
+# Enable autosuggestions and syntax highlighting (clone the repo first)
+# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
