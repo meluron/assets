@@ -1,5 +1,5 @@
 # Python
-alias code="open -a CodeRunner"
+alias code=open -a 'Visual Studio Code'
 alias p="python"
 alias jl="jupyter lab"
 
