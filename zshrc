@@ -1,7 +1,17 @@
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
 # Python
-alias code=open -a 'Visual Studio Code'
+alias cr="open -a CodeRunner"
+alias vs="open -a 'Visual Studio Code'"
 alias p="python"
 alias jl="jupyter lab"
+
+# Zed
+alias zed="/Applications/Zed.app/Contents/MacOS/cli"
 
 # Basic command line operations
 alias l="ls"
@@ -63,7 +73,8 @@ parse_git_branch() {
 setopt PROMPT_SUBST
 
 # Minimal prompt: (venv) foldername branch %
-PROMPT='%F{red}%(1v.%1v .)%F{white}%c%f${$(parse_git_branch):+" | %F{green}$(parse_git_branch)%f"} : '
+PROMPT=$'%F{cyan}%(1v.%1v .)[%n]%F{white} %F{yellow}%2c%f ${$(parse_git_branch):+"@ %F{white}%F{green}$(parse_git_branch)%F{white}%f"}\n> '
+
 #---------------------PROMT------------------------
 
 
@@ -72,3 +83,4 @@ PROMPT='%F{red}%(1v.%1v .)%F{white}%c%f${$(parse_git_branch):+" | %F{green}$(par
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH=$HOME/.npm-global/bin:$PATH
