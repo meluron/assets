@@ -1,0 +1,5 @@
+PRIMARY_COLOR = "#fd8a09"
+SECONDARY_COLOR = "#fbdf8a"
+BOX_FILL = "#fdf6e3"
+BOX_BORDER_COLOR = "#a68c6d"
+TEXT_COLOR = "#3a2c1c"
